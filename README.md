@@ -1,2 +1,2 @@
 # unicode-icons
-Unicode Icons in Prints in (5*5)
+Unicode Icons Prints in (5*5)
