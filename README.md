@@ -1,2 +1,2 @@
 # unicode-icons
-Unicode Icons Prints in (5*5) using C++, Java, Python, R and Golang.
+C++, Java, Python, R and Golang are used for unicode icons (5*5) printing.
