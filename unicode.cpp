@@ -12,9 +12,8 @@ Write your code in this editor and press "Run" button to compile and execute it.
 #include <ctime>
 using namespace std;
 
-int getRandomNum(int lower, int upper,
-                             int count)
-{   int num;
+int getRandomNum(int lower, int upper, int count) {   
+    int num;
     int i;
     srand(time(0));
     for (i = 0; i < count; i++) {
@@ -23,8 +22,7 @@ int getRandomNum(int lower, int upper,
     return num;
 }
 
-int main()
-{
+int main() {
     vector<string> ucicons;
     ucicons.push_back("\U0001F332");
     ucicons.push_back("\U0001F334");
@@ -32,9 +30,8 @@ int main()
     ucicons.push_back("\u2F4A");
     ucicons.push_back("\U0001F38B");
  
-
     std::cout << '\n' << ' ';   
-    for (int i = 0; i < ucicons.size(); i++){
+    for (int i = 0; i < ucicons.size(); i++) {
         vector<int> vec;
         vector<string> temp;
         for (int j = 0; j < ucicons.size(); j++) {
@@ -43,9 +40,7 @@ int main()
                 vec.push_back(randomNum);
                 temp.push_back(ucicons.at(randomNum));
             } else {
-                
-                while (std::find(vec.begin(), vec.end(), randomNum) != vec.end())
-                {
+                while (std::find(vec.begin(), vec.end(), randomNum) != vec.end()) {
                         randomNum = getRandomNum(0, 4, 1);
                 }
                 temp.push_back(ucicons.at(randomNum));
@@ -53,13 +48,10 @@ int main()
                 //cout << ucicons.at( j ) << "\n";
             }
         }
-        
          for(int i=0; i<temp.size(); ++i)
                std::cout << temp[i];
         
         std::cout << '\n' << ' ';        	
     }
-
-
     return 0;
 }
