@@ -9,19 +9,13 @@ for(i in 0:length(icons)) {
     randomNum <- floor(runif(1, min=0, max=4));
     if(idx == 0) {
         vector[idx] <- randomNum
-        #print(icons[randomNum])
         temp[idx] <- icons[randomNum+1]
     } else {
-      #print(randomNum)
-      #print(temp)
-      #print(randomNum)
       while (is.element(randomNum, vector)){
         randomNum <- floor(runif(1, min=0, max=5));
       }
       vector[idx] <- randomNum
-      #print(icons[randomNum])
       temp[idx] <- icons[randomNum+1]
-      #print(pp[j])
     }
     idx<-idx+1
   }
